@@ -7,6 +7,7 @@ module.exports = async function callback() {
     const crowdsale = await Crowdsale_Phase_1.deployed();
     const owner = web3.eth.coinbase;
 
+    await token.setMintAgent(owner, true, { from : owner });
     await token.setMintAgent(crowdsale.address, true, { from : owner });
     await crowdsale.setToken(token.address, { from : owner });
 
