@@ -66,12 +66,13 @@ contract('Crowdsale Phase 1', function(accounts) {
         const crowdsale = await Crowdsale_Phase_1.new(_start);
         
         let factor = new BigNumber(10 ** 18);
-        let crowdale_hard_cap = new BigNumber(10 ** 8).mul(factor);
+        let hard_cap = new BigNumber(10 ** 9).mul(factor);
+        let crowdsale_hard_cap = hard_cap.mul(5).div(100);
         let round;
         
         let expected_round_1 = new Round(_start,
                                          _start + days(6),
-                                         crowdale_hard_cap.mul(45).div(100).toString(10),
+                                         crowdsale_hard_cap.mul(40).div(100).toString(10),
                                          0);
         round = await crowdsale.round1.call();
         let actual_round_1 = new Round(...round);
@@ -79,7 +80,7 @@ contract('Crowdsale Phase 1', function(accounts) {
 
         let expected_round_2 = new Round(new BigNumber(expected_round_1.start).add(days(7)),
                                          new BigNumber(expected_round_1.finish).add(days(7)),
-                                         crowdale_hard_cap.mul(20).div(100).toString(10),
+                                         crowdsale_hard_cap.mul(25).div(100).toString(10),
                                          0);
         round = await crowdsale.round2.call();
         let actual_round_2 = new Round(...round);
@@ -87,7 +88,7 @@ contract('Crowdsale Phase 1', function(accounts) {
 
         let expected_round_3 = new Round(new BigNumber(expected_round_2.start).add(days(7)),
                                          new BigNumber(expected_round_2.finish).add(days(7)),
-                                         crowdale_hard_cap.mul(20).div(100).toString(10),
+                                         crowdsale_hard_cap.mul(20).div(100).toString(10),
                                          0);
         round = await crowdsale.round3.call();
         let actual_round_3 = new Round(...round);
@@ -95,7 +96,7 @@ contract('Crowdsale Phase 1', function(accounts) {
 
         let expected_round_4 = new Round(new BigNumber(expected_round_3.start).add(days(7)),
                                          new BigNumber(expected_round_3.finish).add(days(7)),
-                                         crowdale_hard_cap.mul(15).div(100).toString(10),
+                                         crowdsale_hard_cap.mul(15).div(100).toString(10),
                                          0);
         round = await crowdsale.round4.call();
         let actual_round_4 = new Round(...round);

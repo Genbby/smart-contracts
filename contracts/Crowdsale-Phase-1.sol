@@ -25,11 +25,11 @@ contract CrowdsalePhase1 is Pausable {
     Round public round4;
     uint256 public constant decimals = 18;
     uint256 public constant factor = 10 ** decimals;
-    uint256 public constant crowdsaleHardCap = (10 ** 8) * factor;
+    uint256 public constant crowdsaleHardCap = 5 * (10 ** 7) * factor;
 
     function CrowdsalePhase1(uint256 _startCrowdsale) public {
-        round1 = Round(_startCrowdsale, _startCrowdsale + 6 days, crowdsaleHardCap.mul(45).div(100), 0);
-        round2 = Round(round1.start + 1 weeks, round1.finish + 1 weeks, crowdsaleHardCap.mul(20).div(100), 0);
+        round1 = Round(_startCrowdsale, _startCrowdsale + 6 days, crowdsaleHardCap.mul(40).div(100), 0);
+        round2 = Round(round1.start + 1 weeks, round1.finish + 1 weeks, crowdsaleHardCap.mul(25).div(100), 0);
         round3 = Round(round2.start + 1 weeks, round2.finish + 1 weeks, crowdsaleHardCap.mul(20).div(100), 0);
         round4 = Round(round3.start + 1 weeks, round3.finish + 1 weeks, crowdsaleHardCap.mul(15).div(100), 0);
     }
