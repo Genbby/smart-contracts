@@ -5,14 +5,13 @@ var Test_Buy_Games = artifacts.require('TestBuyGames');
 
 module.exports = function(deployer, network) {
     if (network == 'testrpc') {
-
         deployer.deploy(Genbby_Token);
         deployer.deploy(Crowdsale_Phase_1, Date.now() / 1000);
         deployer.deploy(Test_New_Token);
         deployer.deploy(Test_Buy_Games);
-
     }
     else if (network == 'live') {
-        // Do nothing here, let's run some scripts for the real deployment
+        deployer.deploy(Genbby_Token);
+        deployer.deploy(Crowdsale_Phase_1, Date.UTC(2018, 1, 18) / 1000);
     }
 };

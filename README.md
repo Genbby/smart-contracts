@@ -2,17 +2,12 @@
 
 Please, do not send ETH directly to any Genbby smart contract address. Instead, use any method described in our [official page](http://genbby.com/ "Genbby")
 
-### Download
+### Requisites
 - [NPM](https://www.npmjs.com/get-npm)
+- [Truffle](http://truffleframework.com/docs/getting_started/installation)
+- [TestRPC](https://www.npmjs.com/package/ethereumjs-testrpc)
 
-Clone the repository  
-Open a terminal, go to where you've cloned the repository an run the following commands:
-
-### Instalations (just the first time you use it)
-```bash
-npm install
-```
-
+Clone the repository, open a terminal and go to where you've cloned the repository an run the following commands:
 
 ### Running a private test blockchain (keep it running for the following commands)
 ```bash
