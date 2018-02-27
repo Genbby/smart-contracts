@@ -10,8 +10,12 @@ module.exports = function(deployer, network) {
         deployer.deploy(Test_New_Token);
         deployer.deploy(Test_Buy_Games);
     }
+    else if (network == 'testnet') {
+        deployer.deploy(Genbby_Token);
+        deployer.deploy(Crowdsale_Phase_1, Date.now() / 1000);
+    }
     else if (network == 'live') {
         deployer.deploy(Genbby_Token);
-        deployer.deploy(Crowdsale_Phase_1, Date.UTC(2018, 1, 18) / 1000);
+        deployer.deploy(Crowdsale_Phase_1, Date.UTC(2018, 2, 2, 13, 0, 0) / 1000);
     }
 };

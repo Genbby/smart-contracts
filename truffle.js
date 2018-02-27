@@ -5,6 +5,11 @@ module.exports = {
             port : 8545,
             network_id : '*'
         },
+        testnet : {
+            host : 'localhost',
+            port : 8545,
+            network_id : '*'
+        },
         live : {
             host : 'localhost',
             portt : 8545,
