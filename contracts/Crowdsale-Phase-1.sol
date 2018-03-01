@@ -4,7 +4,7 @@ import './Genbby-Token.sol';
 
 /**
  * @title Crowdsale Phase 1
- * @dev Crowdsale phase 1 smart contract used by http://genbby.com/
+ * @dev Crowdsale phase 1 smart contract used by https://genbby.com/
  */
 contract CrowdsalePhase1 is Pausable {
 
@@ -54,7 +54,7 @@ contract CrowdsalePhase1 is Pausable {
     }
 
     /**
-     * @dev Function to give tokens to others users who have boought Genbby tokens
+     * @dev Function to give tokens to others users who have bought Genbby tokens
      * @param _to The address that will receive the tokens
      * @param _amount The amount of tokens to give
      * @return A boolean that indicates if the operation was successful

@@ -16,6 +16,6 @@ module.exports = function(deployer, network) {
     }
     else if (network == 'live') {
         deployer.deploy(Genbby_Token);
-        deployer.deploy(Crowdsale_Phase_1, Date.UTC(2018, 2, 2, 13, 0, 0) / 1000);
+        deployer.deploy(Crowdsale_Phase_1, Date.UTC(2018, 2, 10, 13, 0, 0) / 1000);
     }
 };

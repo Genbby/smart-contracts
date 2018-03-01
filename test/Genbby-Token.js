@@ -32,7 +32,7 @@ contract('Genbby Token', function(accounts) {
         const expected_decimals = 18;
         const expected_factor = new BigNumber(10 ** 18).toString(10);
         const expected_hard_cap = new BigNumber(10 ** 9).times(expected_factor).toString(10);
-        const expected_contact_information = 'http://genbby.com/';
+        const expected_contact_information = 'https://genbby.com/';
 
         const actual_name = await token.name.call();
         const actual_symbol = await token.symbol.call();

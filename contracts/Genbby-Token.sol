@@ -523,7 +523,7 @@ contract GenbbyToken is UpgradableToken {
 
     function GenbbyToken() public {
         hard_cap = (10 ** 9) * factor;
-        contactInformation = 'http://genbby.com/';
+        contactInformation = 'https://genbby.com/';
     }
 
     function setTokenInformation(string _name, string _symbol) onlyOwner public {
