@@ -2,6 +2,10 @@
 
 Please, do not send ETH directly to any Genbby smart contract address. Instead, use any method described in our [official page](http://genbby.com/ "Genbby")
 
+You can see the deployed contracts here:
+* [Genbby Token](https://etherscan.io/address/0x0906896a7ecfc7a3309e88ece89d6bb761380746)
+* [Crowdsale](https://etherscan.io/address/0x1Db10d198C2D66A8767e7aDde7FA5E5Bf2D57604#readContract)
+
 ### Requisites
 - [NPM](https://www.npmjs.com/get-npm)
 - [Truffle](http://truffleframework.com/docs/getting_started/installation)
