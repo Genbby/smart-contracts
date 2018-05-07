@@ -4,7 +4,6 @@ Please, do not send ETH directly to any Genbby smart contract address. Instead, 
 
 You can see the deployed contracts here:
 * [Genbby Token](https://etherscan.io/address/0x0906896a7ecfc7a3309e88ece89d6bb761380746)
-* [Crowdsale](https://etherscan.io/address/0x1Db10d198C2D66A8767e7aDde7FA5E5Bf2D57604)
 
 ### Requisites
 - [NPM](https://www.npmjs.com/get-npm)
