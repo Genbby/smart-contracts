@@ -47,7 +47,7 @@ contract('Crowdsale Phase 1', function(accounts) {
         
         let factor = new BigNumber(10 ** 18);
         let hard_cap = new BigNumber(10 ** 9).mul(factor);
-        let expected_crowdsale_cap = hard_cap.mul(5).div(100).mul(80).div(100);
+        let expected_crowdsale_cap = hard_cap.mul(5).div(100).mul(75).div(100);
         
         let crowdsale_cap = await crowdsale.total_tokens.call();
         assert.equal(expected_crowdsale_cap.toString(10), crowdsale_cap.toString(10), 'Crowdsale cap information is wrong');

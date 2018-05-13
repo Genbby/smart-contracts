@@ -17,7 +17,7 @@ contract CrowdsalePhase1 is Pausable {
     uint256 public tokens_sold;
     uint256 public constant decimals = 18;
     uint256 public constant factor = 10 ** decimals;
-    uint256 public constant total_tokens = 4 * (10 ** 7) * factor; // 80% 5 % total supply
+    uint256 public constant total_tokens = 37500000 * factor; // 75% 5 % hard cap
 
     event TokensGiven(address to, uint256 amount);
 
