@@ -1,5 +1,6 @@
 var Genbby_Token = artifacts.require('GenbbyToken');
 var Crowdsale_Phase_1 = artifacts.require('CrowdsalePhase1');
+var Airdrop = artifacts.require('Airdrop');
 var Versus_Beta = artifacts.require('VersusBeta');
 
 module.exports = function callback() {
@@ -12,6 +13,9 @@ module.exports = function callback() {
 
     console.log('Address of the deployed crowdsale:');
     console.log(Crowdsale_Phase_1.address);
+
+    console.log('Address of the deployed airdrop:');
+    console.log(Airdrop.address);
 
     console.log('Address of the deployed versus beta:');
     console.log(Versus_Beta.address);   

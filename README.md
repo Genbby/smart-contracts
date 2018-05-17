@@ -38,19 +38,20 @@ truffle test --network testrpc
 ```bash
 truffle test ./test/Genbby-Token.js --network testrpc
 truffle test ./test/Crowdsale-Phase-1.js --network testrpc
+truffle test ./test/Airdrop.js --network testrpc
 truffle test ./test/Test-New-Token.js --network testrpc
 truffle test ./test/Test-Buy-Games.js --network testrpc
 truffle test ./test/Versus-Beta.js --network testrpc
 ```
 
-### To get the addresses of the deployed contracts
-```bash
-truffle exec ./scripts/get-contracts-deployed-addresses.js --network testrpc
-```
-
 ### To init the interaction between the token and the crowdsale
 ```bash
 truffle exec ./scripts/init-contracts-interaction.js --network testrpc
+```
+
+### To get the addresses of the deployed contracts
+```bash
+truffle exec ./scripts/get-contracts-deployed-addresses.js --network testrpc
 ```
 
 Moreover, if you want to simulate interactions with our contracts, you can copy them in [Remix](https://remix.ethereum.org "Remix") and easily interact with them
