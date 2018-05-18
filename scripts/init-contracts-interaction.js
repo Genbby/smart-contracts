@@ -15,7 +15,6 @@ module.exports = async function callback() {
     await token.setMintAgent(crowdsale.address, true, { from : owner });
     await token.setMintAgent(airdrop.address, true, { from: owner })
     await token.setTrustedContract(versus_beta.address, true, { from : owner });
-    await token.setTrustedContract(airdrop.address, true, { from: owner });
     await crowdsale.setToken(token.address, { from : owner });
     await airdrop.setToken(token.address, { from: owner });
     await versus_beta.setToken(token.address);
