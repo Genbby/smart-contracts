@@ -42,8 +42,7 @@ truffle test ./test/Genbby-Token.js --network testrpc
 truffle test ./test/Crowdsale-Phase-1.js --network testrpc
 truffle test ./test/Airdrop.js --network testrpc
 truffle test ./test/Test-New-Token.js --network testrpc
-truffle test ./test/Test-Buy-Games.js --network testrpc
-truffle test ./test/Versus-Beta.js --network testrpc
+truffle test ./test/Genbby-Cash.js --network testrpc
 ```
 
 ### To init the interaction between the token and the crowdsale

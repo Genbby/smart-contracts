@@ -4,13 +4,13 @@ import './Genbby-Token.sol';
 
 /**
  * @title Versus Beta
- * @dev A contract that handle the buying of versus games in the platform
+ * @dev A contract that handle the buying of Genbby cash in the platform
  */
-contract VersusBeta is Pausable {
+contract GenbbyCash is Pausable {
 
     GenbbyToken public token;
 
-    event Buy(address who, uint256 bet);
+    event Cash(address who, uint256 bet);
 
     /**
      * @dev The `owner` can set the token that uses these contract (Genbby tokens)
@@ -24,9 +24,9 @@ contract VersusBeta is Pausable {
      * @param who The buyer
      * @param bet The amount of the bet
      */
-    function buy(address who, uint256 bet) onlyOwner whenNotPaused public {
+    function cash(address who, uint256 bet) onlyOwner whenNotPaused public {
         token.buy(who, bet);
-        Buy(who, bet);
+        Cash(who, bet);
     }
 
     /*
