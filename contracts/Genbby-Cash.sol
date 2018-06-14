@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 import './Genbby-Token.sol';
 
 /**
- * @title Versus Beta
+ * @title Genbby Cash
  * @dev A contract that handle the buying of Genbby cash in the platform
  */
 contract GenbbyCash is Pausable {
@@ -20,7 +20,7 @@ contract GenbbyCash is Pausable {
     }
 
     /**
-     * @dev Function that handle the buying of a versus game with `bet` amount
+     * @dev Function that handle the decrement of Genbby Tokens equivalent for the buying of 'bet' Genbby Cash
      * @param who The buyer
      * @param bet The amount of the bet
      */
